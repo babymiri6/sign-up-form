@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- linking the javascript file to the html -->
+    <script src="script.js"></script>
+
+    <div class="formContainer">
+        <div class="welcomeContainer">
+            <div class="welcomeContent">
+                <h1 class="welcomeAboardHeader">Welcome Aboard</h1>
+
+                <p class="subtext">Unlock access to your dashboard. It starts with a quick signup</p>
+
+                <p class="haveAnAccount">Already have an account?</p>
+
+                <button name="sign in" id="signIn" value="sign in">Sign in</button>
+
+            </div>
+        </div>
+
+        <div class="createAccountContainer">
+            <div class="createAccountContent">
+                <h2 class="createAccountHeader">Create your account</h1>
+
+                <label for="name">Fullname</label><br>
+                <input type="text" name="name" id="name" placeholder="Enter your fullname..." required><br><br>
+
+                <label for="email">Email</label><br>
+                <input type="email" name="email" id="email" placeholder="Enter you email..." required><br><br>
+
+                <label for="password">Password</label><br>
+                <input type="password" name="password" id="password" placeholder="Create a password" required><br><br>
+
+                <caption>Password should have a minimum of 8 characters</caption><br><br>
+
+                <button name="sign up" id="signUp" value="sign up">Get started</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
