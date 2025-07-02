@@ -1,10 +1,150 @@
 *{
     margin: 0px;
     padding: 0px;
+    border: 0px;
     box-sizing: border-box;
 }
 
 body{
     overflow-x: hidden;
+    min-height: 100vh;
+    padding: 20px;
 }
+
+.formContainer{
+    display: flex;
+    width: 85%;
+    min-width: 1000px;
+    height: auto;
+    min-height: 550px;
+    margin: 22px auto;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    overflow: hidden;  /* to ensure that the corners are rounded well */
+}
+
+.welcomeContainer{
+    width: 45%;
+    min-width: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(34, 172, 172);
+    color: rgb(255, 255, 255);
+}
+
+.welcomeContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* aligns items horizontally in the webcontent div */
+    justify-content: space-between;
+    gap: 28px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.welcomeAboardHeader {
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+.subtext{
+    font-family: sans-serif;
+    font-size: 16px;
+    opacity: 0.9;
+    line-height: 1.4;  /* For better readability */
+}
+
+.haveAnAccount{
+    font-size: 13px;
+    opacity: 0.85;
+}
+
+#signIn{
+    width: 100%;
+    max-width: 200px; /* for responsivenes */
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(34, 172, 172);
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: background-color 0.3s ease,
+                color 0.3s ease;
+}
+
+/* Adding a hover effect */
+#signIn:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(34, 172, 172);
+}
+
+.createAccountContainer{
+    width: 55%;
+    min-width: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.createAccountContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 28px;
+    width: 100%;
+    max-width: 350px;
+}
+
+.createAccountHeader{
+    color: rgb(34, 172, 172);
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+.label{
+    font-size: 13px;
+    opacity: 0.55;
+}
+
+.input{
+    height: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+    width: 100%;
+    max-width: 270px;
+    padding: 12px;
+    margin-top: 4px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+/* Change color of the input field border when one wants to type */
+.input:focus{
+    outline: none;
+    border-color: rgb(34, 172, 172);
+}
+
+.createAccountContent .message{
+    font-size: 13px;
+    opacity: 0.5;
+}
+
+#bounceMessage{
+    width: 250px;
+    height: 20px;
+    background-color: red;
+}
+
+#signUp{
+    width: 250px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(34, 172, 172);
+    color: rgb(255, 255, 255);
+    margin-top: 28px;
+}
+
 
