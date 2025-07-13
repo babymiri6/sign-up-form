@@ -53,22 +53,21 @@ function validatePassword(signUpPassword){
  //SIGN IN PROCESS
 
 const logInForm = document.getElementById("loginForm"); // different ID
-
-logInForm.addEventListener("submit", function(event) {
-
-    event.preventDefault();     //prevent the form from submitting immediately
-
-    loginProcess();
-});
- function loginProcess(){
-    const logInMessage = document.getElementById("logInMessage");
+const logInMessage = document.getElementById("logInMessage");
 
     const logInPassword = document.getElementById("logInPassword").value;
     const storedPassword = localStorage.getItem("userPassword");
 
     console.log(logInPassword); //Making sure we are getting the correct value
 
+logInForm.addEventListener("submit", function(event) {
+
+    event.preventDefault();     //prevent the form from submitting immediately
+
+    loginProcess();
     logInMessage.style.color = "green";
+});
+ function loginProcess(){
 
     if(logInPassword === storedPassword){
         logInMessage.innerText = "Login successful!";
@@ -80,4 +79,11 @@ logInForm.addEventListener("submit", function(event) {
 
  }
 
- 
+// NAVIGATING BETWEEN THE TWO FILES
+ function goToLogin() {
+    window.location.href = "login.html";
+}
+
+function goToSignup() {
+    window.location.href = "index.html"; 
+}
