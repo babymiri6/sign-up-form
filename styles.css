@@ -132,17 +132,9 @@ body{
     border-color: rgb(34, 172, 172);
 }
 
-.createAccountContent .message{
+.message{
     font-size: 13px;
     opacity: 0.5;
-}
-
-.loginToAccountContent .message{
-    font-size: 13px;
-    opacity: 0.5;
-}
-
-#bounceMessage{
     width: 250px;
     height: 20px;
 }
