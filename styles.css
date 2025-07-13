@@ -80,7 +80,7 @@ body{
     color: rgb(34, 172, 172);
 }
 
-.createAccountContainer{
+.createAccountContainer, .loginToAccountContainer{
     width: 55%;
     min-width: 550px;
     display: flex;
@@ -88,7 +88,7 @@ body{
     justify-content: center;
 }
 
-.createAccountContent{
+.createAccountContent, .loginToAccountContent{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -98,7 +98,7 @@ body{
     max-width: 350px;
 }
 
-.createAccountHeader{
+.createAccountHeader, .loginToAccountHeader{
     color: rgb(34, 172, 172);
     text-align: left;
     font-size: 1.5rem;
@@ -107,6 +107,11 @@ body{
 .label{
     font-size: 13px;
     opacity: 0.55;
+}
+
+.inputContainer{
+    width: 100%;
+    min-width: 270px;
 }
 
 .input{
@@ -132,13 +137,18 @@ body{
     opacity: 0.5;
 }
 
+.loginToAccountContent .message{
+    font-size: 13px;
+    opacity: 0.5;
+}
+
 #bounceMessage{
     width: 250px;
     height: 20px;
 }
 
 #signUp{
-    width: 250px;
+    width: 270px;
     height: 40px;
     border-radius: 20px;
     background-color: rgb(45, 196, 196);
@@ -149,7 +159,42 @@ body{
 }
 
 #signUp:hover{
-    background-color: rgb(34, 172, 172);
+    background-color: rgb(29, 158, 158);
 }
 
 
+
+/* Sign in page */
+#signUp1{
+    width: 100%;
+    max-width: 200px; /* for responsivenes */
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(34, 172, 172);
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: background-color 0.3s ease,
+                color 0.3s ease;
+}
+
+/* Adding a hover effect */
+#signUp1:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(34, 172, 172);
+}
+
+#signIn1{
+    width: 270px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(45, 196, 196);
+    color: rgb(255, 255, 255);
+    margin-top: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#signIn1:hover{
+    background-color: rgb(29, 158, 158);
+}

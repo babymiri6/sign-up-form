@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- linking the javascript file to the html -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="formContainer">
+        <div class="welcomeContainer">
+            <div class="welcomeContent">
+                <h1 class="welcomeAboardHeader">Welcome Back Miriam!</h1>
+
+                <p class="subtext">Continue from where you left off. Greatness awaits!</p>
+
+                <p class="haveAnAccount">Don't have an account?</p>
+
+                <input type="submit" name="sign up" id="signUp1" value="Get started">
+
+            </div>
+        </div>
+
+        <div class="loginToAccountContainer">
+            <div class="loginToAccountContent">
+                <h2 class="loginToAccountHeader">Sign in to your account</h1>
+                
+                <form action="#" id="form1">
+                    <div class="inputContainer">
+                        <label for="email" class="label">Email</label><br>
+                        <input type="email" name="email" id="email" class="input"  placeholder="Enter you email..." required><br><br>
+
+                        <label for="password1" class="label">Password</label><br>
+                        <input type="password" name="password1" id="password1" class="input"  placeholder="Enter your password..." required><br><br>
+
+                        <p class="message" id="bounceMessage1"></p>
+                    </div>
+
+                    <input type="submit" name="sign in" id="signIn1" value="Sign in">
+
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
